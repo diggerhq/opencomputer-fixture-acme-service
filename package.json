@@ -1,0 +1,14 @@
+{
+  "name": "acme-service",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Demo fixture service with a seeded CSV export defect",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "lint": "node --check src/*.js"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
