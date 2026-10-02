@@ -8,3 +8,4 @@ Read this before working in this repository.
 - Keep changes minimal and add a test for every fixed defect.
 - Do not add dependencies.
 - Do not touch the data in `src/customers.js` except to add test fixtures within tests.
+- Work delegated to the Linear agent also follows `.agents/conventions.md`.
