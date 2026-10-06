@@ -6,6 +6,7 @@ repo: diggerhq/opencomputer-fixture-acme-service
 branch: agent/health-trailing-slash-2
 base: main
 version: 3
+
 ```kevin-state
 {
   "version": 3,
@@ -18,7 +19,7 @@ version: 3
       "attempt": 1,
       "sessionId": "e204ab8b-ad4d-7322-6ca2-849ad856bf04",
       "branch": "agent/health-trailing-slash-2--alias",
-      "state": "running"
+      "state": "landed"
     }
   ]
 }
@@ -70,6 +71,12 @@ the truth for stream sessions.
 ## Build record
 
 - v3: plan skeleton committed; stream `alias` dispatched (attempt 1).
+- alias@1 landed `c4670d39e2df7e7ca4485473856633575f06bfa9` "Serve GET /health/
+  as an alias of GET /health". Checks: `npm test` pass, 7/7 (new: `/health/`
+  200 JSON ok; `/customers.csv/` still 404). Files touched: `src/server.js`,
+  `test/server.test.js` only. Blocked: none. Plan amendments: none. Note from
+  the implementer: sandbox had no git author, commit authored as Kevin.
+  Next: integrate into `agent/health-trailing-slash-2`.
 
 ## Prompts
 
