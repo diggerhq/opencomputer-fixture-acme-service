@@ -11,7 +11,16 @@ version: 3
   "version": 3,
   "leadSessionId": "ses_eeceef15fffduz4cKTYbh2tbyD",
   "threadId": "1791322028.406439",
-  "streams": []
+  "subscriptionId": "evs_2df49cc80899442e8ee2efd1310961c6",
+  "streams": [
+    {
+      "stream": "alias",
+      "attempt": 1,
+      "sessionId": "e204ab8b-ad4d-7322-6ca2-849ad856bf04",
+      "branch": "agent/health-trailing-slash-2--alias",
+      "state": "running"
+    }
+  ]
 }
 ```
 
