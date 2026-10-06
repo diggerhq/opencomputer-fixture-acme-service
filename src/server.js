@@ -5,7 +5,7 @@ import { exportCustomersCsv } from "./csv.js";
 
 export function createApp() {
   return createServer((req, res) => {
-    if (req.method === "GET" && req.url === "/health") {
+    if (req.method === "GET" && (req.url === "/health" || req.url === "/health/")) {
       res.writeHead(200, { "content-type": "application/json" });
       res.end(JSON.stringify({ status: "ok" }));
       return;
